@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Biodata</title>
+</head>
+<body>
+    <table border="1" cellspacing="0" cellpadding="10" align="center"> 
+        <caption>
+            <h1>BIODATA SISWA</h1>
+        </caption>
+        <tr>
+            <th colspan="2" bgcolor="lightgray">
+                FORM BIODATA SISWA
+            </th>
+        </tr>
+
+        <tr>
+            <td>
+                <form>
+                    <table border="0" cellspacing="0" cellpadding="10">
+                        <tr>
+                            <td width="100">NISN</td>
+                            <td>
+                                <input type="number" name="nisn">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="100">Nama</td>
+                            <td>
+                                <input type="text" name="name">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="100">Jenis Kelamin</td>
+                            <td>
+                                <input type="radio" name="kelamin" value="Laki-Laki">Laki-Laki
+                                <input type="radio" name="kelamin" value="Perempuan">Perempuan
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="100">Agama</td>
+                            <td>
+                                <select name="agama">
+                                    <option value="Islam">Islam</option>
+                                    <option value="Kristen">Kristen</option>
+                                    <option value="Katolik">Katolik</option>
+                                    <option value="Hindu">Hindu</option>
+                                    <option value="Buddha">Buddha</option>
+                                    <option value="Khonghucu">Khonghucu</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">
+                                <hr>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="100" colspan="3" align="center">
+                                <input type="submit" value="Simpan Data">
+                                <input type="reset" value="Reset">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
