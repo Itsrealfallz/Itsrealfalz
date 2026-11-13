@@ -1,0 +1,207 @@
+<DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>biodata siswa</title>
+    <style>
+       /* Mengatur posisi formulir di tengah layar */
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        background-color: #f5f0f8; /* Latar belakang ungu sangat muda */
+      }
+
+      /* Kotak luar/border ganda menggunakan warna Ungu */
+      .form-container {
+        width: 550px; /* Ukuran sedang */
+        border: 4px double #333333; /* Border Ungu Tua */
+        padding: 15px;
+        background-color: #ffffff;
+        box-sizing: border-box;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(106, 27, 154, 0.15);
+      }
+
+      /* Judul Form berwarna Ungu dengan garis bawah Merah */
+      .form-title {
+        text-align: center;
+        font-size: 22px;
+        font-weight: bold;
+        color: #333333; /* Ungu gelap */
+        margin-bottom: 15px;
+        border-bottom: 2px solid #000000; /* Garis bawah Merah */
+        padding-bottom: 10px;
+      }
+
+      /* Tabel Form */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      td {
+        padding: 6px 4px;
+        vertical-align: top;
+        font-size: 14px;
+        color: #333333;
+      }
+
+      /* Lebar kolom label & titik dua */
+      .label-col {
+        width: 160px;
+        font-weight: bold;
+        color: #333333; /* Label berwarna Ungu */
+      }
+
+      .colon-col {
+        width: 10px;
+        color: #333333; /* Titik dua berwarna Merah */
+        font-weight: bold;
+      }
+
+      /* Styling field input dan textarea */
+      input[type="text"],
+      textarea {
+        width: 100%;
+        padding: 5px;
+        box-sizing: border-box;
+        border: 1px solid #333333; /* Border input Ungu */
+        border-radius: 4px;
+        outline: none;
+      }
+
+      /* Efek fokus saat kolom diklik */
+      input[type="text"]:focus,
+      textarea:focus {
+        border-color: #d32f2f; /* Border berubah Merah saat diklik */
+        box-shadow: 0 0 3px rgba(211, 47, 47, 0.5);
+      }
+
+      /* Format agama */
+      .ttl-container {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .ttl-container input[type="text"] {
+        width: 50px;
+        text-align: center;
+      }
+
+      .ttl-container input.tempat {
+        width: 180px;
+        text-align: left;
+      }
+
+      /* Styling Radio Button & Checkbox */
+      input[type="radio"],
+      input[type="checkbox"] {
+        accent-color: #0969c2; /* Warna centang/pilihan Merah */
+      }
+
+      /* Styling Tombol */
+      .button-group {
+        padding-top: 15px;
+        text-align: center;
+      }
+
+      .button-group button {
+        padding: 6px 16px;
+        margin: 0 5px;
+        cursor: pointer;
+        border: none;
+        border-radius: 4px;
+        font-weight: bold;
+        transition: 0.2s;
+      }
+
+      /* Tombol Simpan data (Ungu) */
+      .btn-simpan data:hover{
+        background-color: #0969c2;
+        color: white;
+      }
+
+      .btn-simpan data:hover {
+        background-color: #0969c2;
+      }
+
+      /* Tombol Clear (Merah) */
+      .btn-reset:hover {
+        background-color: #0969c2;
+        color: white;
+      }
+
+      .btn-reset:hover {
+        background-color: #0969c2;
+      }
+     </style>
+   <head>
+<body>
+  <title>biodata siswa</title>
+  <h2 align="center">BIODATA SISWA</h2>
+  
+  
+  <div class="form-container">
+      <div class="form-title">FORM BIODATA SISWA</div>
+      
+      
+      
+
+      <form>
+        <table>
+
+
+          <tr>
+            <td class="label-col">NISN</td>
+            <td class="colon-col">:</td>
+            <td><input type="text" name="nama" />
+       </tr>
+            <td class="label-col">Nama</td>
+            <td class="colon-col">:</td>
+            <td><input type="text" name="nama" /></td>
+        <tr>
+            <td class="label-col">Jenis Kelamin</td>
+            <td class="colon-col">:</td>
+            <td>
+              <label
+                ><input type="radio" name="jk" value="Laki-Laki" />
+                Laki-Laki</label>
+              
+              </label>
+                ><input type="radio" name="jk" value="Perempuan" />
+                Perempuan</label>
+              
+            </td>
+          </tr>
+          <tr>
+            <td class="label-col">Agama</td>
+            <td class="colon-col">
+            <select name="agama" id="agama">
+         <option value="islam">islam</option>
+         <option value="kristen">kristen</option>
+         <option value="katolik">katolik</option>
+         <option value="hindu">hindu</option>
+         <option value="buddha">buddha</option>
+         <option value="khonghucu">khonghucu</option>
+    </select><br>
+    </select>
+    <br>
+          </tr>
+          <tr>
+            <td colspan="3" class="button-group">
+              <button type="simpan data" class="btn-simpan data">Simpan data</button>
+              <button type="reset" class="btn-reset">reset</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html> 
+    </body>
